@@ -153,7 +153,7 @@ export function Worlds() {
   const active = pipelines[activeIdx];
 
   return (
-    <section id="worlds" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="worlds" className="mx-auto max-w-7xl px-6 py-16">
       <Reveal>
         <h2 className="mb-3 font-mono text-sm text-accent">01 · Approach</h2>
       </Reveal>
@@ -164,7 +164,7 @@ export function Worlds() {
       </Reveal>
 
       <Reveal delay={0.15}>
-        <div className="mb-8 inline-flex flex-wrap gap-1 rounded-full border border-border bg-surface p-1">
+        <div className="mb-8 inline-flex flex-wrap gap-1 rounded-2xl border border-border bg-surface p-1">
           {pipelines.map((p, i) => (
             <button
               key={p.key}

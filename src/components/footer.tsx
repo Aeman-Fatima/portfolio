@@ -8,25 +8,7 @@ export function Footer() {
         <p>Built with Next.js, Tailwind &amp; Framer Motion</p>
       </div>
       <p className="mx-auto mt-2 max-w-7xl text-center text-xs text-muted/70 sm:text-right">
-        &quot;Brain&quot; 3D model by{" "}
-        <a
-          href="https://poly.pizza/m/5mPRPZkI3qt"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-foreground"
-        >
-          Poly by Google
-        </a>{" "}
-        (CC-BY) · &quot;Robot Arm&quot; 3D model by{" "}
-        <a
-          href="https://poly.pizza/m/aL6uHwsMCVF"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-foreground"
-        >
-          m m
-        </a>{" "}
-        (CC-BY) · &quot;Mini Robot&quot; 3D model by{" "}
+        &quot;Mini Robot&quot; 3D model by{" "}
         <a
           href="https://sketchfab.com/3d-models/mini-robot-3454c84d6eff4a9dabbfadbfd1f56524"
           target="_blank"

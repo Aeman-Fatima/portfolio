@@ -7,39 +7,140 @@ export const profile = {
   linkedin: "https://linkedin.com/in/aemanfatima",
   resumeUrl: "/resume.pdf",
   summary:
-    "Full-stack engineer with 5 years of experience across full-time and contract engagements, owning products end-to-end, from architecture through deployment, DevOps, and ongoing client support. I've built a multi-tenant SaaS platform for agricultural businesses, a telecom franchise management system, a gaming platform serving 400K+ users, and a healthcare communication platform used by major US health systems. I recently completed a Master of AI and Machine Learning, building a full-stack AI tutoring platform as my capstone that combines deterministic verification with LLM-based classification. I use AI tools like Claude Code to move fast, while keeping my own judgement on anything that decides whether the result is actually good.",
+    "Full-stack engineer with 5+ years building production software across startup, contract and full-time environments, owning products end-to-end, from architecture through deployment, DevOps, and ongoing client support. I've built a multi-tenant SaaS platform for agricultural businesses, a telecom franchise management system, a gaming platform serving 400K+ users, and a healthcare communication platform used by major US health systems. I recently completed a Master of AI and Machine Learning, building a full-stack AI tutoring platform as my capstone that combines deterministic verification with LLM-based classification. I use AI tools like Claude Code to move fast, while keeping my own judgement on anything that decides whether the result is actually good.",
+  aboutHeadline: "I build full-stack products end-to-end, from architecture to production.",
+  aboutParagraphs: [
+    "I'm a full-stack engineer with 5+ years building production software across startup, contract and full-time environments — spanning healthcare, SaaS, telecom and gaming. My work has ranged from multi-tenant business platforms and telecom systems to products serving more than 400,000 users and healthcare software used by major US health systems.",
+    "I recently completed a Master of Artificial Intelligence and Machine Learning, where I built a full-stack AI tutoring platform combining deterministic verification with LLM-based classification. I use AI tools to accelerate development, while keeping engineering judgement, testing and product quality firmly in the loop.",
+  ],
+  aboutTags: ["Full-stack", "AI/ML", "Cloud"],
 };
 
-export const skills = {
-  Frontend: ["Angular", "React", "HTML5", "CSS3", "Tailwind CSS"],
-  Backend: ["Node.js", "NestJS", "Express", ".NET (C#)", "PHP", "Strapi", "Laravel"],
-  "Cloud & Tools": [
-    "AWS (EC2, S3, SQS, Lambda)",
-    "Azure (Data Factory)",
-    "Docker",
-    "Apache",
-    "Linux",
-    "Git",
-    "CI/CD",
-  ],
-  "API & Integration": ["REST API design", "OAuth/SSO", "Stripe", "Third-party SSO integration"],
-  "Security & Auth": ["RBAC", "JWT authentication", "Data encryption basics", "HIPAA-compliant data handling"],
-  Databases: ["PostgreSQL", "MySQL", "SQLite", "Sequelize", "TypeORM"],
-  Testing: ["Jest", "Unit & integration testing", "Data quality validation"],
-  "AI & ML": [
-    "Claude Code",
-    "Anthropic Claude API",
-    "Google Gemini API",
-    "PyTorch",
-    "TensorFlow/Keras",
-    "Scikit-learn",
-    "Hugging Face Transformers",
-    "spaCy",
-    "NLTK",
-    "RAG",
-  ],
-  Languages: ["TypeScript", "JavaScript", "C#", "PHP", "Python", "SQL"],
-};
+type SkillItem = { name: string; primary?: boolean };
+type SkillGroup = { category: string; items: SkillItem[] };
+
+// The full breadth of the stack. Primary (teal) marks the handful of
+// technologies used deepest and most often; everything else is still real
+// experience, just not the daily-driver layer.
+export const skillGroups: SkillGroup[] = [
+  {
+    category: "Frontend",
+    items: [
+      { name: "Angular", primary: true },
+      { name: "React" },
+      { name: "Next.js" },
+      { name: "TypeScript", primary: true },
+      { name: "JavaScript" },
+      { name: "HTML & CSS" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  {
+    category: "Backend",
+    items: [
+      { name: "Node.js", primary: true },
+      { name: "NestJS", primary: true },
+      { name: "Express" },
+      { name: "REST APIs" },
+      { name: "Strapi" },
+      { name: "Laravel" },
+      { name: "PHP" },
+      { name: "WordPress" },
+      { name: ".NET (C#)" },
+    ],
+  },
+  {
+    category: "Cloud Platforms",
+    items: [
+      { name: "AWS", primary: true },
+      { name: "Azure" },
+      { name: "Docker" },
+      { name: "CI/CD" },
+      { name: "Linux" },
+      { name: "Git" },
+      { name: "Apache" },
+    ],
+  },
+  {
+    category: "Databases",
+    items: [
+      { name: "PostgreSQL", primary: true },
+      { name: "MySQL" },
+      { name: "MongoDB" },
+      { name: "DynamoDB" },
+      { name: "Amazon RDS" },
+      { name: "Azure SQL" },
+      { name: "Snowflake SQL" },
+      { name: "SQLite" },
+      { name: "T-SQL" },
+      { name: "PL/pgSQL" },
+      { name: "SuiteQL" },
+      { name: "TypeORM" },
+      { name: "Sequelize" },
+    ],
+  },
+  {
+    category: "AI & GenAI",
+    items: [
+      { name: "Python", primary: true },
+      { name: "PyTorch" },
+      { name: "TensorFlow/Keras" },
+      { name: "Scikit-learn" },
+      { name: "Hugging Face" },
+      { name: "spaCy" },
+      { name: "NLTK" },
+      { name: "RAG" },
+      { name: "LLM Application Development" },
+      { name: "Claude API" },
+      { name: "Gemini API" },
+      { name: "Amazon Bedrock" },
+      { name: "Prompt Engineering" },
+      { name: "MCP (Model Context Protocol)" },
+      { name: "LLM-to-SQL" },
+    ],
+  },
+  {
+    category: "APIs & Integrations",
+    items: [
+      { name: "NetSuite (SuiteTalk/SuiteQL)" },
+      { name: "Shopify (REST/GraphQL)" },
+      { name: "Toast POS" },
+      { name: "Stripe" },
+      { name: "HubSpot" },
+      { name: "Third-party integrations" },
+    ],
+  },
+  {
+    category: "Security & Auth",
+    items: [
+      { name: "JWT" },
+      { name: "OAuth2/OAuth1" },
+      { name: "RBAC" },
+      { name: "AWS Cognito" },
+      { name: "Keycloak" },
+      { name: "Firebase" },
+      { name: "BankID" },
+      { name: "Secure data handling" },
+      { name: "HIPAA-aware data handling" },
+      { name: "Multi-Tenant Row-Level Security" },
+    ],
+  },
+  {
+    category: "Testing & Quality",
+    items: [{ name: "Jest" }, { name: "Unit & integration testing" }],
+  },
+  {
+    category: "Additional Experience",
+    items: [
+      { name: "C#" },
+      { name: "SQL" },
+      { name: "Azure Data Factory" },
+      { name: "Custom Reporting Platforms" },
+      { name: "Unity (Game Dev)" },
+      { name: "Discord Bots" },
+    ],
+  },
+];
 
 export const experience = [
   {

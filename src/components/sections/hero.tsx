@@ -11,7 +11,7 @@ const HeroVisual = dynamic(
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden md:min-h-[85vh]">
+    <section id="top" className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden">
       <div
         aria-hidden
         className="pointer-events-none absolute left-[5%] top-[10%] h-80 w-80 rounded-full bg-accent/20 blur-[110px]"
@@ -20,7 +20,7 @@ export function Hero() {
         aria-hidden
         className="pointer-events-none absolute bottom-[5%] right-[5%] h-96 w-96 rounded-full bg-code-accent/15 blur-[120px]"
       />
-      <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-4 px-6 pb-16 pt-24 md:min-h-[85vh] md:flex-row md:items-center md:justify-between md:gap-10 md:pb-4 md:pt-20">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-3 px-6 py-8 md:flex-row md:items-center md:justify-between md:gap-10 md:py-12">
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <div className="relative pl-6 md:pl-7">
             <span
@@ -35,7 +35,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl"
+              className="text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl"
             >
               Hi, I&apos;m{" "}
               <span className="bg-gradient-to-r from-accent to-code-accent bg-clip-text text-transparent">
@@ -46,7 +46,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="mt-4 max-w-xl text-xl font-medium text-muted sm:text-2xl"
+              className="mt-3 max-w-xl text-lg font-medium text-muted sm:text-xl md:mt-4 md:text-2xl"
             >
               {profile.tagline}
             </motion.p>
@@ -54,16 +54,17 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 max-w-xl text-lg text-muted"
+              className="mt-4 max-w-xl text-base text-muted sm:text-lg md:mt-6"
             >
-              5 years shipping production systems end-to-end, from architecture and AWS
-              infrastructure to the code clients actually use. Now building on the AI side too.
+              5+ years building production software across startup, contract and full-time
+              environments — from architecture and AWS infrastructure to the code clients
+              actually use. Now building on the AI side too.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="mt-10 flex flex-wrap items-center justify-center gap-4 md:justify-start"
+              className="mt-6 flex flex-wrap items-center justify-center gap-4 md:mt-10 md:justify-start"
             >
               <a
                 href="#projects"
@@ -86,7 +87,7 @@ export function Hero() {
             </motion.div>
           </div>
         </div>
-        <div className="relative h-72 w-full max-w-sm shrink-0 sm:h-96 sm:max-w-md md:-mt-10 md:h-[30rem] md:w-[30rem] md:max-w-none">
+        <div className="relative h-56 w-full max-w-xs shrink-0 sm:h-80 sm:max-w-sm md:-mt-10 md:h-[30rem] md:w-[30rem] md:max-w-none">
           <HeroVisual />
         </div>
       </div>

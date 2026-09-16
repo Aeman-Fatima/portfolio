@@ -7,7 +7,7 @@ function initialsFor(company: string) {
 
 export function Experience() {
   return (
-    <section id="experience" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="experience" className="mx-auto max-w-7xl px-6 py-16">
       <Reveal>
         <h2 className="mb-3 font-mono text-sm text-accent">04 · Experience</h2>
       </Reveal>

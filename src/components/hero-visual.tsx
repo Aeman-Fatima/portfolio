@@ -8,11 +8,10 @@ import { RobotBot } from "@/components/robot-bot";
 import { RobotWireframe } from "@/components/robot-wireframe";
 import { RobotHumanoid } from "@/components/robot-humanoid";
 import { RobotExpressive } from "@/components/robot-expressive";
-import { AiBrain } from "@/components/ai-brain";
 import { RobotMini } from "@/components/robot-mini";
 
 // Flip this to switch the hero visual. All are kept so you can go back and forth.
-const VISUAL: "mini" | "brain" | "expressive" | "humanoid" | "wireframe" | "robot" | "core" = "expressive";
+const VISUAL: "mini" | "expressive" | "humanoid" | "wireframe" | "robot" | "core" = "expressive";
 
 export function HeroVisual() {
   const { resolvedTheme } = useTheme();
@@ -38,8 +37,6 @@ export function HeroVisual() {
       />
       {VISUAL === "mini" ? (
         <RobotMini />
-      ) : VISUAL === "brain" ? (
-        <AiBrain theme={theme} />
       ) : VISUAL === "expressive" ? (
         <RobotExpressive theme={theme} />
       ) : VISUAL === "humanoid" ? (

@@ -89,7 +89,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="mx-auto max-w-7xl px-6 py-24">
+    <section id="contact" className="mx-auto max-w-7xl px-6 py-16">
       <Reveal>
         <h2 className="mb-3 font-mono text-sm text-accent">06 · Contact</h2>
       </Reveal>
