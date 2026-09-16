@@ -21,6 +21,17 @@ export type WebProject = {
 // image dropped into /public/projects/.
 export const webProjects: WebProject[] = [
   {
+    slug: "portfolio",
+    name: "This Portfolio",
+    categories: ["Websites", "Designs"],
+    description:
+      "This site: designed and built end-to-end, from the 3D hero visuals and interactive architecture diagram to the content, layout, and deployment pipeline.",
+    image: "/projects/portfolio.webp",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"],
+    isLive: true,
+    url: "https://www.aeman.com.au/",
+  },
+  {
     slug: "eon-health",
     name: "EON Health: Communication Management",
     categories: ["Websites"],

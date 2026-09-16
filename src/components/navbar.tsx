@@ -14,19 +14,28 @@ const links = [
 export function Navbar() {
   return (
     <header className="sticky top-4 z-50 px-4">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-border bg-background/70 px-4 py-2.5 shadow-lg shadow-black/5 backdrop-blur-xl">
-        <Link href="#top" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-accent to-code-accent text-sm font-bold text-white">
-            A
-          </span>
-          <span className="font-mono text-sm font-medium tracking-tight">aeman.dev</span>
+      <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-3xl border border-border/60 bg-gradient-to-r from-background via-surface to-accent/15 px-5 py-3 shadow-lg shadow-black/10 backdrop-blur-xl">
+        <Link href="#top" className="flex items-center gap-3">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/avatar.webp"
+            alt="Aeman Fatima"
+            className="h-11 w-11 rounded-xl object-cover ring-1 ring-border transition-transform duration-200 hover:scale-125"
+          />
+          <div className="flex flex-col leading-tight">
+            <span className="text-base font-bold tracking-tight">Aeman Fatima</span>
+            <span className="flex items-center gap-1.5 font-mono text-[11px] text-muted">
+              <span className="h-1.5 w-1.5 rounded-full bg-code-accent" />
+              FULL-STACK &amp; AI ENGINEER
+            </span>
+          </div>
         </Link>
         <div className="hidden items-center gap-7 md:flex">
           {links.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-muted transition-colors hover:text-foreground"
+              className="text-sm font-semibold text-muted transition-colors hover:text-foreground"
             >
               {link.label}
             </Link>
@@ -37,7 +46,7 @@ export function Navbar() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-accent hover:underline"
+            className="rounded-full bg-gradient-to-r from-accent to-code-accent px-4 py-2 text-sm font-semibold text-white shadow-[0_0_16px_-6px_var(--accent)] transition-all hover:scale-105"
           >
             Resume
           </a>
