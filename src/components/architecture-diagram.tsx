@@ -31,7 +31,7 @@ export function ArchitectureDiagram() {
   const { scale, offset } = useMemo(() => {
     // Scale against the true bounding sphere of the actual vertices (not
     // Box3.getBoundingSphere, which sizes off the axis-aligned box's corner-
-    // to-corner diagonal — overly conservative, since it assumes a single
+    // to-corner diagonal, which is overly conservative, since it assumes a single
     // point sits at all three axis extremes at once). This keeps the diagram
     // from clipping the frame at any drag angle without shrinking it far more
     // than necessary.
@@ -53,7 +53,7 @@ export function ArchitectureDiagram() {
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
     if (group.current) {
-      // No auto-spin here — OrbitControls (drag + autoRotate) owns the overall
+      // No auto-spin here: OrbitControls (drag + autoRotate) owns the overall
       // orientation now, so it doesn't fight the user's own dragging.
       group.current.position.y = BASE_POSITION[1] + Math.sin(t * 0.8) * 0.08;
     }

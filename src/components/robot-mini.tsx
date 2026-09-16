@@ -13,7 +13,7 @@ const PALETTE_TOP = "#fbbf24";
 const PALETTE_BOTTOM = "#f97316";
 
 // The source model mirrors both arms into a single shared mesh per arm part
-// (no separate left/right nodes) — but the two halves never share vertices,
+// (no separate left/right nodes), but the two halves never share vertices,
 // so each arm mesh can be split cleanly down the middle by world-space X sign
 // into two independent meshes, letting just one side wave.
 const ARM_PREFIXES = ["arms_high", "arm_joint", "Cylinder"];
@@ -161,13 +161,13 @@ export function RobotMini() {
       if (!(child instanceof THREE.Mesh)) return;
       const parentName = child.parent?.name ?? "";
 
-      // Leave the visor untouched — its baked texture is the face (eyes,
+      // Leave the visor untouched: its baked texture is the face (eyes,
       // mouth), not just a flat color, so recoloring it erases the face.
       if (parentName === "screen") return;
 
       // Tint the existing material's color instead of replacing it outright,
       // so the original texture maps (shading, highlights, panel lines) stay
-      // intact — a full replacement flattens the model to solid plastic.
+      // intact: a full replacement flattens the model to solid plastic.
       const original = Array.isArray(child.material) ? child.material[0] : child.material;
       if (!original) return;
       const partBox = new THREE.Box3().setFromObject(child);
@@ -186,7 +186,7 @@ export function RobotMini() {
     group.current.rotation.y = Math.sin(t * 0.35) * 0.5;
     group.current.position.y = BASE_POSITION[1] + Math.sin(t * 1.1) * 0.08;
     if (armPivot.current) {
-      // Raised out to the side, wagging back and forth — a one-arm wave.
+      // Raised out to the side, wagging back and forth: a one-arm wave.
       armPivot.current.rotation.z = 1.9 + Math.sin(t * 6) * 0.35;
     }
   });

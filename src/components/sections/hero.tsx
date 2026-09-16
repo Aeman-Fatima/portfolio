@@ -57,7 +57,7 @@ export function Hero() {
               className="mt-4 max-w-xl text-base text-muted sm:text-lg md:mt-6"
             >
               5+ years building production software across startup, contract and full-time
-              environments — from architecture and AWS infrastructure to the code clients
+              environments, from architecture and AWS infrastructure to the code clients
               actually use. Now building on the AI side too.
             </motion.p>
             <motion.div
