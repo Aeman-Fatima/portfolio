@@ -41,16 +41,6 @@ export function Navbar() {
             </Link>
           ))}
         </div>
-        <div className="flex items-center gap-3">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-gradient-to-r from-accent to-code-accent px-4 py-2 text-sm font-semibold text-white shadow-[0_0_16px_-6px_var(--accent)] transition-all hover:scale-105"
-          >
-            Resume
-          </a>
-        </div>
       </nav>
     </header>
   );
