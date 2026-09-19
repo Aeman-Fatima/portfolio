@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from '@vercel/analytics/next';
 import { ThemeProvider } from "@/components/theme-provider";
 import { SiteBackdrop } from "@/components/site-backdrop";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const sans = Inter({
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
           <Analytics />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
