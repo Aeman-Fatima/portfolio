@@ -43,6 +43,17 @@ export const webProjects: WebProject[] = [
     url: "https://www.eonhealth.com/",
   },
   {
+    slug: "gs-analytics",
+    name: "GS Analytics",
+    categories: ["Websites"],
+    description:
+      "A multi-tenant sales analytics platform for small businesses: customer, product, and city-level dashboards, CSV import, churn-risk flagging, product trend tracking, and a clearly labelled illustrative sales forecast. Designed and built end-to-end.",
+    image: "/projects/gs-analytics.webp",
+    stack: ["ASP.NET Core (.NET 10)", "C#", "EF Core", "PostgreSQL", "JWT", "Docker"],
+    isLive: false,
+    statusOverride: { label: "IN PROGRESS", dotClassName: "bg-accent" },
+  },
+  {
     slug: "ai-math-tutor",
     name: "Attempt-Aware AI Math Tutor",
     categories: ["Websites"],

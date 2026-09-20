@@ -46,7 +46,8 @@ export const skillGroups: SkillGroup[] = [
       { name: "Strapi", primary: true },
       { name: "Laravel" },
       { name: "PHP", primary: true },
-      { name: ".NET (C#)" },
+      { name: "ASP.NET Core (.NET 10)", primary: true },
+      { name: "EF Core", primary: true },
     ],
   },
   {
