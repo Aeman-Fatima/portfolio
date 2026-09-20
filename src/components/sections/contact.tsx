@@ -91,7 +91,7 @@ export function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-7xl px-6 py-16">
       <Reveal>
-        <h2 className="mb-3 font-mono text-sm text-accent">06 · Contact</h2>
+        <h2 className="mb-3 font-mono text-sm text-accent">07 · Contact</h2>
       </Reveal>
       <Reveal delay={0.1}>
         <h3 className="mb-10 max-w-2xl text-3xl font-semibold tracking-tight sm:text-4xl">
