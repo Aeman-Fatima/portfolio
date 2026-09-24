@@ -76,6 +76,16 @@ export const webProjects: WebProject[] = [
     url: "https://fawkesgames.com/en/",
   },
   {
+    slug: "carizma",
+    name: "Carizma",
+    categories: ["Websites"],
+    description:
+      "Built the Angular frontend for Carizma's multi-step seller journey: vehicle lookup, reactive forms with validation, condition and contact-information screens, review flow, and instant cash offer generation, integrated with REST APIs across the complete flow.",
+    image: "/projects/carizma.webp",
+    stack: ["Angular", "REST APIs"],
+    isLive: true,
+  },
+  {
     slug: "pashma-khan",
     name: "Pashma Khan",
     categories: ["Websites"],
