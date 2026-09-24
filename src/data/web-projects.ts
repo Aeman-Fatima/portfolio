@@ -145,6 +145,7 @@ export const webProjects: WebProject[] = [
     categories: ["Websites"],
     description:
       "A multi-tenant SaaS platform for agricultural businesses: inventory, order tracking, customer management, and reporting, deployed as 6 customized copies across 3 clients.",
+    image: "/projects/agro-saas.webp",
     stack: ["PHP", "MySQL", "Apache", "Linux"],
     isLive: false,
     privateNote: "Private client platform, no public link.",
