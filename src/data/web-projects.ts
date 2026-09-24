@@ -21,17 +21,6 @@ export type WebProject = {
 // image dropped into /public/projects/.
 export const webProjects: WebProject[] = [
   {
-    slug: "portfolio",
-    name: "This Portfolio",
-    categories: ["Websites", "Designs"],
-    description:
-      "This site: designed and built end-to-end, from the 3D hero visuals and interactive architecture diagram to the content, layout, and deployment pipeline.",
-    image: "/projects/portfolio.webp",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"],
-    isLive: true,
-    url: "https://www.aeman.com.au/",
-  },
-  {
     slug: "eon-health",
     name: "EON Health: Communication Management",
     categories: ["Websites"],
@@ -41,28 +30,6 @@ export const webProjects: WebProject[] = [
     stack: ["Angular", "NestJS", "PostgreSQL", "AWS"],
     isLive: true,
     url: "https://www.eonhealth.com/",
-  },
-  {
-    slug: "gs-analytics",
-    name: "GS Analytics",
-    categories: ["Websites"],
-    description:
-      "A multi-tenant sales analytics platform for small businesses: customer, product, and city-level dashboards, CSV import, churn-risk flagging, product trend tracking, and a clearly labelled illustrative sales forecast. Designed and built end-to-end.",
-    image: "/projects/gs-analytics.webp",
-    stack: ["ASP.NET Core (.NET 10)", "C#", "EF Core", "PostgreSQL", "JWT", "Docker"],
-    isLive: false,
-    statusOverride: { label: "IN PROGRESS", dotClassName: "bg-accent" },
-  },
-  {
-    slug: "ai-math-tutor",
-    name: "Attempt-Aware AI Math Tutor",
-    categories: ["Websites"],
-    description:
-      "My AI/ML capstone: a full-stack tutoring platform with a two-layer answer-evaluation pipeline combining deterministic verification with LLM classification. Designed and built end-to-end.",
-    image: "/projects/ai-math-tutor.webp",
-    stack: ["Angular", "Python", "Claude API", "Gemini API", "SymPy"],
-    isLive: false,
-    statusOverride: { label: "IN PROGRESS", dotClassName: "bg-accent" },
   },
   {
     slug: "fawkes-games",
@@ -76,14 +43,26 @@ export const webProjects: WebProject[] = [
     url: "https://fawkesgames.com/en/",
   },
   {
-    slug: "carizma",
-    name: "Carizma",
+    slug: "ai-math-tutor",
+    name: "Attempt-Aware AI Math Tutor",
     categories: ["Websites"],
     description:
-      "Built the Angular frontend for Carizma's multi-step seller journey: vehicle lookup, reactive forms with validation, condition and contact-information screens, review flow, and instant cash offer generation, integrated with REST APIs across the complete flow.",
-    image: "/projects/carizma.webp",
-    stack: ["Angular", "REST APIs"],
-    isLive: true,
+      "My AI/ML capstone: a full-stack tutoring platform with a two-layer answer-evaluation pipeline combining deterministic verification with LLM classification. Designed and built end-to-end.",
+    image: "/projects/ai-math-tutor.webp",
+    stack: ["Angular", "Python", "Claude API", "Gemini API", "SymPy"],
+    isLive: false,
+    statusOverride: { label: "IN PROGRESS", dotClassName: "bg-accent" },
+  },
+  {
+    slug: "gs-analytics",
+    name: "GS Analytics",
+    categories: ["Websites"],
+    description:
+      "A multi-tenant sales analytics platform for small businesses: customer, product, and city-level dashboards, CSV import, churn-risk flagging, product trend tracking, and a clearly labelled illustrative sales forecast. Designed and built end-to-end.",
+    image: "/projects/gs-analytics.webp",
+    stack: ["ASP.NET Core (.NET 10)", "C#", "EF Core", "PostgreSQL", "JWT", "Docker"],
+    isLive: false,
+    statusOverride: { label: "IN PROGRESS", dotClassName: "bg-accent" },
   },
   {
     slug: "pashma-khan",
@@ -117,6 +96,27 @@ export const webProjects: WebProject[] = [
     stack: ["NestJS", "TypeORM", "Angular", "Angular Material", "ffmpeg", "SQLite"],
     isLive: false,
     statusOverride: { label: "LOCAL DEMO", dotClassName: "bg-accent" },
+  },
+  {
+    slug: "portfolio",
+    name: "This Portfolio",
+    categories: ["Websites", "Designs"],
+    description:
+      "This site: designed and built end-to-end, from the 3D hero visuals and interactive architecture diagram to the content, layout, and deployment pipeline.",
+    image: "/projects/portfolio.webp",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"],
+    isLive: true,
+    url: "https://www.aeman.com.au/",
+  },
+  {
+    slug: "carizma",
+    name: "Carizma",
+    categories: ["Websites"],
+    description:
+      "Built the Angular frontend for Carizma's multi-step seller journey: vehicle lookup, reactive forms with validation, condition and contact-information screens, review flow, and instant cash offer generation, integrated with REST APIs across the complete flow.",
+    image: "/projects/carizma.webp",
+    stack: ["Angular", "REST APIs"],
+    isLive: true,
   },
   {
     slug: "franchise-management-system",
